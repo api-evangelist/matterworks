@@ -1,9 +1,29 @@
 aid: matterworks
 name: Matterworks
-description: Matterworks is a company surfaced as a portfolio company of wing-venture-capital and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Matterworks is a Boston-based life-sciences AI company building foundation models for
+  biochemical omics. Its Large Spectral Model is trained on billions of small-molecule,
+  lipid, peptide, and protein mass-spectrometry spectra across millions of biological
+  contexts, and its Pyxis platform turns raw omics data into quantitative, untargeted
+  biochemical annotations and predictions used for asset and target discovery,
+  mode-of-action elucidation, and life-science R&D pipeline decisions. Matterworks positions
+  biochemical omics as explaining orders of magnitude more biological variation than
+  sequence data alone. The product is accessed through the Pyxis web application
+  (app.matterworks.ai, Auth0 sign-in); no public developer API, OpenAPI, SDK, or
+  documentation surface is published at this time.
 url: https://raw.githubusercontent.com/api-evangelist/matterworks/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://avatars.githubusercontent.com/u/66066030?v=4
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -12,9 +32,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Artificial Intelligence
+- Metabolomics
+- Omics
+- Life Sciences
+- Biotechnology
+- Mass Spectrometry
+- Foundation Models
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +49,28 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/matterworks-domain-security.yml
+- type: WellKnown
+  url: well-known/matterworks-well-known.yml
 - type: Website
-  url: https://www.matterworksbio.com/
+  url: https://www.matterworks.ai/
+- type: Platform
+  url: https://www.matterworks.ai/platform
+- type: Blog
+  url: https://www.matterworks.ai/insights
+- type: GitHubOrganization
+  url: https://github.com/matterworksbio
+- type: SignUp
+  url: https://app.matterworks.ai/sign-up
+- type: Support
+  url: https://www.matterworks.ai/#contact-us
+- type: PrivacyPolicy
+  url: https://www.matterworks.ai/privacy-policy
+- type: TermsOfService
+  url: https://www.matterworks.ai/terms-of-use
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 3
+  pass: local-v1
