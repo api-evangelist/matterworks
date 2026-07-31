@@ -1,0 +1,25 @@
+generated: '2026-07-20'
+method: searched
+source: live probes of /.well-known/ on Matterworks hosts
+notes: >-
+  Matterworks publishes no public developer API. The only .well-known document
+  discovered is the OpenID Connect discovery for the Pyxis web application login
+  (app.matterworks.ai), which is fronted by an Auth0 tenant
+  (issuer https://matterworks.us.auth0.com/). The marketing host www.matterworks.ai
+  serves no .well-known discovery documents.
+hosts:
+  - host: https://app.matterworks.ai
+    documents:
+      - path: /.well-known/openid-configuration
+        status: 200
+        file: matterworks-openid-configuration.json
+  - host: https://www.matterworks.ai
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
