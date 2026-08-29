@@ -12,6 +12,17 @@ description: >-
   (app.matterworks.ai, Auth0 sign-in); no public developer API, OpenAPI, SDK, or
   documentation surface is published at this time.
 url: https://raw.githubusercontent.com/api-evangelist/matterworks/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
